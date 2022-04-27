@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Slope Factor of Safety Prediction App</title>
+    </head>
+    <h1 style="font-family:ubuntu; color:blue"> Gradient Boosting Enabled FOS Prediciton </h1>
+    <body>
+        <form name="form", method="POST", style="text-align: center;">
+            <br>
+            Height: <input type="number" name="Height", placeholder="Enter height in m" required/>
+            <br><br>
+            SlopeAngle: <input type="number" name="SlopeAngle", placeholder="Enter SlopeAngle" required/>
+            <br><br>
+            Cohesion: <input type="number" name="Cohesion", placeholder="Enter Cohesion" required/>
+            <br><br>
+            FrictionAngle: <input type="number" name="FrictionAngle", placeholder="Enter FrictionAngle" required/>
+            <br><br>
+            <button value="Submit">Run</button>
+        </form>
+        <i style="font-family:ubuntu; color:green"> The calculated FOS is: </i>
+        <p style="text-align: center;">{{ output }}</p>
+    </body>
+</html>
